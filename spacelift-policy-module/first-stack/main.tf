@@ -12,9 +12,6 @@ provider "spacelift" {
   api_key_id       = var.spacelift_first_account_key_id
   api_key_secret   = var.spacelift_first_account_key_secret
 }
-provider "spacelift" {
-  alias = "first-stack"
-}
 
 resource "spacelift_policy" "login_policy" {
   provider = spacelift.first-stack
