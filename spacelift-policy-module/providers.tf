@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    spacelift = {
+      source  = "spacelift-io/spacelift"
+      version = "1.15.0"  # Make sure this matches the desired provider version
+    }
+  }
+}
 provider "spacelift" {
   alias            = "first-stack"
   api_key_endpoint = "https://gtestlogin.app.spacelift.io"
